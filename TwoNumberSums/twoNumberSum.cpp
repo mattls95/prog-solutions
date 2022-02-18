@@ -2,7 +2,7 @@
 #include <iostream>
 using namespace std;
 
-//vector<int> twoNumberSum(vector<int> array, int targetSum) {}
+vector<int> twoNumberSumSoluOne(vector<int> array, int targetSum);
 
 vector<int> twoNumberSumSoluOne(vector<int> array, int targetSum) {
 	vector<int> sum(2);
@@ -25,6 +25,11 @@ int main (){
     vector<int> sum{3, 5, -4, 8, 11, 1, -1, 6};
     int targetsum = 10;
 
+	vector<int> answer = twoNumberSumSoluOne(sum,targetsum);
+	for(int x : answer){
+		cout << x;
+		cout << ", ";
+	}
 
    return 0;
 }
